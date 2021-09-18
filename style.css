@@ -8,16 +8,17 @@ body {
 
 header {
     height: 100px;
-    background-color: lightblue;
+    background-color: deepskyblue;
     text-align: center;
     padding-top: 20px;
-    box-shadow: 3px 3px 3px #ccc;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 2px 2px 3px #ccc;
 }
 
 header h1 {
     font-size: 40px;
     font-weight: bold;
-    color: dodgerblue;
+    color: white;
     margin: 0;
 }
 
@@ -27,7 +28,15 @@ header h1 {
 }
 
 #search {
+    display: flex;
     font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+#city {
+    margin: 0 1rem;
+    flex-basis: 50%;
 }
 
 #search label {
@@ -64,6 +73,7 @@ header h1 {
     box-sizing: border-box;
     display: none;
     font-weight: bold;
+    border-radius: 1rem;
 }
 
 #weather h1 {
